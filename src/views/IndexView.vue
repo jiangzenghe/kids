@@ -44,17 +44,18 @@
 		<!-- <div class="layout-container" style="width: 100%"> -->
 			<div class="index-page" style="width: 100%;">
 				<div class="index-banner" style="text-align: center">
-					<h2>自主创新跨平台企业级解决方案</h2>
-					<p>光明网曾考虑过通过原生App来实现移动化，但是由于无法复用原始业务流程和数据就放弃了，直到选用了云适配整体解决方案后，可以很方便的在Enterplorer上使用一个帐号登录我们的系统，通过VPN随时进入内网。</p>
+					<!-- <h2>Peninsula Montessori Academy</h2> -->
+					<h2>Kids Are The Best</h2>
+					<p></p>
 				</div>
 			</div>
 		<!-- </div> -->
 		
-		<div class="section">
+		<div class="index-1">
 			<div class="container" style="max-width: 1160px;">
-				<div class="section--header">
-					<h2 class="section--title">核心优势</h2>
-					<p class="section--description">
+				<div class="index-1--header">
+					<h2 class="index-1--title">About</h2>
+					<p class="index-1--description">
 						全球领先HTML5企业移动化解决方案供应商，由前微软美国总部IE浏览器核心研发团队成员及移动互联网行业专家在美国西雅图创立,获得了微软创投的扶持以及晨兴资本、IDG资本、天创资本等国际顶级风投机构的投资。
 					</p>
 				</div>

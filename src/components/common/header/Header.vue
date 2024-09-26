@@ -10,7 +10,7 @@
 			
 			<div class="nav">
 				<ul class="am-nav am-nav-pills am-nav-justify">
-					<li><router-link class="router" to="/index">PMA Home</router-link></li>
+					<li><router-link class="router" to="/index">Home</router-link></li>
 					<li><router-link class="router" to="/toddler">Toddler</router-link></li>
 					<li><router-link class="router" to="/preschool">Preschool</router-link></li>
 					<li><router-link class="router" to="/faculty">Faculty</router-link></li>
