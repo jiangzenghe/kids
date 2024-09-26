@@ -1,0 +1,23 @@
+
+/*  默认样式 */
+@import "common.min.css";
+@import "amazeui.css";
+
+/* Index */
+@import "index.min.css";
+
+/* Product */
+@import "product.css";
+@import "toddler.min.css";
+
+/* Example */
+@import "preschool.min.css";
+
+/* News */
+@import "faculty.min.css";
+@import "join.min.css";
+
+/* About */
+@import "about.min.css";
+
+
