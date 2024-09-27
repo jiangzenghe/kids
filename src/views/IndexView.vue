@@ -44,8 +44,8 @@
 		<!-- <div class="layout-container" style="width: 100%"> -->
 			<div class="index-page" style="width: 100%;">
 				<div class="index-banner" style="text-align: center">
-					<!-- <h2>Peninsula Montessori Academy</h2> -->
-					<h2>Kids Are The Best</h2>
+					<h2>Peninsula Montessori Academy</h2>
+					<!-- <h2>Kids Are The Best</h2> -->
 					<p></p>
 				</div>
 			</div>
@@ -54,11 +54,10 @@
 		<div class="index-1">
 			<div class="container" style="max-width: 1160px;">
 				<div class="index-1--header">
-					<h2 class="index-1--title">About</h2>
+					<!-- <h2 class="index-1--title">Peninsula Montessori Academy</h2> -->
 					<p class="index-1--description">
-						The goal of Montessori is to provide a nurturing and inspiring learningenvironment that encourages children to explore freely and at their own paceDr. Montessori learned that when children are really interested, they have atremendous capacity to concentrate and engage
-When children are allowed opportunities to do things on their own, theydevelop self-esteem
-The goal of Montessori is to provide a nurturing and inspiring learningenvironment that encourages children to explore freely and at their own pace.Dr. Montessori learned that when children are really interested, they have atremendous capacity to concentrate and engage.
+							The goal of Peninsula Montessori Academy is to provide a nurturing and inspiring learning environment that encourages children to explore freely and at their own pace.
+						<!-- Dr. Montessori learned that when children are really interested, they have atremendous capacity to concentrate and engage -->
 					</p>
 				</div>
 				
@@ -79,11 +78,7 @@ The goal of Montessori is to provide a nurturing and inspiring learningenvironme
 		<div class="section" style="border-bottom: 1px solid #e9e9e9; padding-top: 0">
 			<div class="container" style="max-width: 1160px;">
 				<div class="section--header">
-					<h2 class="section--title">我们的服务</h2>
-					<p class="section--description">
-						全球领先HTML5企业移动化解决方案供应商，由前微软美国总部IE浏览器核心研发团队成员及移动互联网行业专家在美国西雅图创立
-						<br>获得了微软创投的扶持以及晨兴资本、IDG资本、天创资本等国际顶级风投机构的投资。
-					</p>
+					<h2 class="section--title">Why Choose Us</h2>
 				</div>
 				
 				<div class="index-container">
