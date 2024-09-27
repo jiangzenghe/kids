@@ -13,14 +13,13 @@
 		<div class="section example">
 			<div class="container" style="max-width: 1160px; margin: 0 auto">
 				<div class="section--header">
-					<h2 class="section--title">全球首创 自主创新</h2>
+					<h2 class="section--title"></h2>
 					<p class="section--description">
-						Enterplorer Studio是一套面向企业级移动信息化建设的开发平台。集聚开发、测试、
-						<br>打包、发布于一体的移动化开发综合平台。
+						
 					</p>
 				</div>
 				
-				<div class="example-container">
+				<!-- <div class="example-container">
 					<div class="am-tabs">
 						<ul class="am-tabs-nav am-nav am-nav-tabs am-g">
 							<li class="am-u-md-2"
@@ -38,7 +37,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</Layout>

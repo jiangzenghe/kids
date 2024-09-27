@@ -15,9 +15,9 @@
 		<div class="section">
 			<div class="container" style="max-width: 1160px">
 				<div class="section--header">
-					<h2 class="section--title">解决方案案例展示</h2>
+					<h2 class="section--title"></h2>
 					<p class="section--description">
-						全球独创专利技术：一行代码部署，帮助企业快速安全地将现有PC版网页适配成HTML5跨屏网页，跨平台的企业统一办公 门户，快捷的移动适配开发能力，完备的数据安全保护
+						
 					</p>
 				</div>
 				

@@ -13,10 +13,9 @@
 		<div class="section">
 			<div class="container" style="max-width: 1160px">
 				<div class="section--header">
-					<h2 class="section--title">最近新闻</h2>
+					<h2 class="section--title">Late News</h2>
 					<p class="section--description">
-						云适配与中建材信息技术股份有限公司（以下简称“中建信息”）联合举办的“战略
-						<br>合作签约仪式暨全国跨屏行动启动大会”在北京成功举办。
+						
 					</p>
 				</div>
 				

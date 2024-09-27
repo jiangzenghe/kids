@@ -43,10 +43,10 @@
 		</div> -->
 		<!-- <div class="layout-container" style="width: 100%"> -->
 			<div class="index-page" style="width: 100%;">
-				<div class="index-banner" style="text-align: center">
+				<div class="index-banner">
 					<h2>Peninsula Montessori Academy</h2>
 					<!-- <h2>Kids Are The Best</h2> -->
-					<p></p>
+					<p>The goal of Peninsula Montessori Academy is to provide a nurturing and inspiring learning environment that encourages children to explore freely and at their own pace.</p>
 				</div>
 			</div>
 		<!-- </div> -->
@@ -56,7 +56,7 @@
 				<div class="index-1--header">
 					<!-- <h2 class="index-1--title">Peninsula Montessori Academy</h2> -->
 					<p class="index-1--description">
-							The goal of Peninsula Montessori Academy is to provide a nurturing and inspiring learning environment that encourages children to explore freely and at their own pace.
+							<!-- The goal of Peninsula Montessori Academy is to provide a nurturing and inspiring learning environment that encourages children to explore freely and at their own pace. -->
 						<!-- Dr. Montessori learned that when children are really interested, they have atremendous capacity to concentrate and engage -->
 					</p>
 				</div>
@@ -75,25 +75,59 @@
 			</div>
 		</div>
 		
-		<div class="section" style="border-bottom: 1px solid #e9e9e9; padding-top: 0">
-			<div class="container" style="max-width: 1160px;">
-				<div class="section--header">
-					<h2 class="section--title">Why Choose Us</h2>
+				<div class="title-section">
+					<h1>Why Choose Us</h1>
 				</div>
 				
-				<div class="index-container">
-					<div class="am-g">
-						<div class="am-u-md-3" v-for="(service,index) in serviceList" :key="index">
-							<div class="service_item">
-								<i class="service_item--icon" :class="service.icon"></i>
-								<h3 class="service_item--title">{{ service.title }}</h3>
-								<div class="service_item--text"><p>{{service.desc}}</p></div>
-							</div>
+				<div class="card-container">
+					<div class="card" v-for="(card, index) in cards" :key="index" :style="{ backgroundColor: card.color }">
+					<div class="icon-container">
+						<!-- 确保icon-background有白色背景 -->
+						<div class="icon-background">
+							<img :src="card.icon" alt="icon" class="icon" />
 						</div>
 					</div>
+					<h2>{{ card.title }}</h2>
+					<p>{{ card.desc }}</p>
+					</div>
 				</div>
+
+		<div class="title-section">
+      		<h1><span>Activities</span></h1>
+      	</div>
+		<!-- <div class="section" style="border-bottom: 1px solid #e9e9e9; padding-top: 0">
+			<div class="container" style="max-width: 1160px;">
+				<div class="section--header">
+					<h2 class="section--title">Activities</h2>
+				</div>
+				
+
 			</div>
-		</div>
+		</div> -->
+
+		<div class="teacher-list-container">
+    <!-- 标题部分 -->
+    <div class="title-section">
+      <h1><span>Certified</span> Teachers</h1>
+      <p>Our team members are developmental specialist for the age they teach. All head teachers hold an A.M.I teaching credential.</p>
+    </div>
+
+    <!-- 教师卡片列表 -->
+    <div class="teacher-cards">
+      <div class="teacher-card" v-for="(teacher, index) in teachers" :key="index">
+        <img :src="teacher.photo" alt="teacher photo" class="teacher-photo" />
+        <h3>{{ teacher.name }}</h3>
+        <h4>{{ teacher.position }}</h4>
+        <p>{{ teacher.description }}</p>
+        <!-- 社交媒体图标 -->
+        <div v-if="teacher.socials" class="social-icons">
+          <a v-for="(icon, index) in teacher.socials" :key="index" :href="icon.link" target="_blank">
+            <i :class="icon.iconClass"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 	</Layout>
 </template>
 
@@ -104,22 +138,50 @@ export default {
 	components: {Layout},
 	data(){
 		return{
-			tabList:[
-				// {name:'家用电梯', desc:'一句话概括特点', icon:'am-icon-cog'},
-				// {name:'别墅电梯', desc:'一句话概括特点', icon:'am-icon-lightbulb-o'},
-				// {name:'观光电梯', desc:'一句话概括特点', icon:'am-icon-line-chart'},
-				// {name:'关于我们', desc:'一句话概括特点', icon:'am-icon-hourglass-end'},
+			cards:[
+				{title:'Certified Teachers', color:'#4aace2', desc:'All head teachers hold an A.M.I teaching credential', 
+					icon:require('../assets/images/index/teacher.png')},
+				{title:'Creative Lessons', color:'#8cc63f', desc:'Provide a nurturing and inspiring learning environment', 
+					icon:require('../assets/images/index/education.png')},
+				{title:'Follow Child', color:'#624fa9', desc:'Mixed Age Grouping, Three Year Circles, Learning through Life Experiences', 
+					icon:require('../assets/images/index/playing.png')},
 			],
 			tabIndex: 0,
 			slideshow:[],
+			teachers: [
+        {
+          name: 'Bianca Wilson',
+          position: 'TEACHER',
+          photo: require('../assets/images/teacher-1.jpg'),
+          description: 'I am an ambitious workaholic, but apart from that, pretty simple'
+        },
+        {
+          name: 'Mitch Parker',
+          position: 'ENGLISH TEACHER',
+          photo: require('../assets/images/teacher-2.jpg'),
+          description: 'I am an ambitious workaholic, but apart from that, pretty simple',
+          socials: [
+            { link: '#', iconClass: 'fab fa-twitter' },
+            { link: '#', iconClass: 'fab fa-facebook' },
+            { link: '#', iconClass: 'fab fa-google' },
+            { link: '#', iconClass: 'fab fa-instagram' }
+          ]
+        },
+        {
+          name: 'Stella Smith',
+          position: 'ART TEACHER',
+          photo: require('../assets/images/teacher-3.jpg'),
+          description: 'I am an ambitious workaholic, but apart from that, pretty simple'
+        },
+        {
+          name: 'Monshe Henderson',
+          position: 'SCIENCE TEACHER',
+          photo: require('../assets/images/teacher-4.jpg'),
+          description: 'I am an ambitious workaholic, but apart from that, pretty simple'
+        }
+      ],
 			
-			advantageList:[
-				// {id:1,cover:require('../assets/images/index/f01.jpg'),title:'简单的适配过程',desc:'用户可快速学习适配开发，通过丰富的组件库完成页面功能的移动化适配。'},
-				// {id:2,cover:require('../assets/images/index/f01.jpg'),title:'简单的适配过程',desc:'用户可快速学习适配开发，通过丰富的组件库完成页面功能的移动化适配。'},
-				// {id:3,cover:require('../assets/images/index/f01.jpg'),title:'简单的适配过程',desc:'用户可快速学习适配开发，通过丰富的组件库完成页面功能的移动化适配。'},
-				// {id:4,cover:require('../assets/images/index/f01.jpg'),title:'简单的适配过程',desc:'用户可快速学习适配开发，通过丰富的组件库完成页面功能的移动化适配。'},
-			],
-			serviceList:[
+			activityList:[
 				// {id:1,icon:'am-icon-diamond',title:'多页面工作',desc:'标签栏可切换，不必为了新内容而被迫跳转界面，多项工作内容并行处理'},
 				// {id:2,icon:'am-icon-user',title:'多页面工作',desc:'标签栏可切换，不必为了新内容而被迫跳转界面，多项工作内容并行处理'},
 				// {id:3,icon:'am-icon-umbrella',title:'多页面工作',desc:'标签栏可切换，不必为了新内容而被迫跳转界面，多项工作内容并行处理'},
