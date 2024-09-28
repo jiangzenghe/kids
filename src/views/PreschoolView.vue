@@ -12,11 +12,51 @@
 		
 		<div class="section example">
 			<div class="container" style="max-width: 1160px; margin: 0 auto">
-				<div class="section--header">
-					<h2 class="section--title"></h2>
-					<p class="section--description">
-						
-					</p>
+				<!-- 第一个布局：左边文字右边图片 -->
+				<div class="layout">
+					<div class="text-content">
+						<h2>Classroom</h2>
+						<p>
+						Preschoolers use their newfound independence, language, and latent curiosity to play, build, and respond to their world. RRDC preschool classrooms challenge children with more complex materials as students work to recognize patterns, accomplish tasks, and care for their environment.
+						</p>
+						<p>
+						In the classroom, students can explore dramatic play, storytelling, visual arts, puzzles, math manipulatives, toys, and games at their own pace. Balanced with time for music, cultural education, outdoor play, nap, meals, and snacks, preschoolers practice a daily routine that builds confidence before kindergarten.
+						</p>
+					</div>
+					<div class="image-content">
+						<img src="../assets/images/pre_1.jpg" alt="Classroom Image">
+					</div>
+				</div>
+
+				<!-- 第二个布局：左边图片右边文字 -->
+				<div class="layout">
+					<div class="image-content">
+						<img src="../assets/images/pre_2.jpg" alt="Preschool Activities Image">
+					</div>
+					<div class="text-content">
+						<h2>Preschool Activities</h2>
+						<p>
+						Students engage in a variety of activities designed to foster creativity and critical thinking. From painting and drawing to building with blocks, preschoolers are encouraged to explore and express themselves through hands-on learning.
+						</p>
+						<p>
+						Teachers provide guidance while allowing children the freedom to discover new concepts at their own pace. These activities not only develop fine motor skills but also lay the foundation for academic success and social-emotional growth.
+						</p>
+					</div>
+				</div>
+
+				<div class="layout">
+					<div class="text-content">
+						<h2> Curriculum</h2>
+						<p>
+						Preschoolers use their newfound independence, language, and latent curiosity to play, build, and respond to their world. RRDC preschool classrooms challenge children with more complex materials as students work to recognize patterns, accomplish tasks, and care for their environment.
+						</p>
+						<p>
+						In the classroom, students can explore dramatic play, storytelling, visual arts, puzzles, math manipulatives, toys, and games at their own pace. Balanced with time for music, cultural education, outdoor play, nap, meals, and snacks, preschoolers practice a daily routine that builds confidence before kindergarten.
+						</p>
+					</div>
+					<div class="image-content">
+						<img src="../assets/images/pre_3.jpg" alt="Curriculum Image">
+					</div>
 				</div>
 				
 				<!-- <div class="example-container">
@@ -52,12 +92,6 @@ export default {
 		return{
 			tabIndex: 0,
 			tabList:[
-				{id:1,name:'主要案例',icon:'am-icon-map-o'},
-				{id:1,name:'客户案例一',icon:'am-icon-scribd'},
-				{id:1,name:'客户案例二',icon:'am-icon-odnoklassniki'},
-				{id:1,name:'客户案例三',icon:'am-icon-building-o'},
-				{id:1,name:'客户案例四',icon:'am-icon-hand-scissors-o'},
-				{id:1,name:'客户案例五',icon:'am-icon-camera'},
 			],
 			list:[],
 		}

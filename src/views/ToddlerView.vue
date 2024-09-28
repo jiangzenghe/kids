@@ -14,34 +14,50 @@
 		
 		<div class="section">
 			<div class="container" style="max-width: 1160px">
-				<div class="section--header">
-					<h2 class="section--title"></h2>
-					<p class="section--description">
-						
-					</p>
+				<!-- 第一个布局：左边文字右边图片 -->
+				<div class="layout">
+					<div class="text-content">
+						<h2>Classroom</h2>
+						<p>
+						Preschoolers use their newfound independence, language, and latent curiosity to play, build, and respond to their world. RRDC preschool classrooms challenge children with more complex materials as students work to recognize patterns, accomplish tasks, and care for their environment.
+						</p>
+						<p>
+						In the classroom, students can explore dramatic play, storytelling, visual arts, puzzles, math manipulatives, toys, and games at their own pace. Balanced with time for music, cultural education, outdoor play, nap, meals, and snacks, preschoolers practice a daily routine that builds confidence before kindergarten.
+						</p>
+					</div>
+					<div class="image-content">
+						<img src="../assets/images/toddler_1.jpg" alt="Classroom Image">
+					</div>
 				</div>
-				
-				<div class="solution-container">
-					<div data-am-widget="tabs" class="am-tabs ">
-						<ul class="am-tabs-nav am-cf">
-							<li v-for="(tab,index) in tabList"
-								:key="index"
-								@click.prevent="changeTab(index,tab.typeId)"
-								:class="tabIndex === index ? 'am-active':''">
-								<a href="#">{{tab.typeName}}</a>
-							</li>
-						</ul>
-						<div class="am-tabs-bd">
-							<div class=am-tabs-tab>
-								<div class="am-tab"
-									v-for="(goods,index) in goodsList"
-									:key="index"
-									@click="handleDetails(goods.typeDetaisId)">
-									<img :src="goods.imageUrl1" alt="">
-									<p>{{goods.title}}</p>
-								</div>
-							</div>
-						</div>
+
+				<!-- 第二个布局：左边图片右边文字 -->
+				<div class="layout">
+					<div class="image-content">
+						<img src="../assets/images/toddler_2.jpg" alt="Preschool Activities Image">
+					</div>
+					<div class="text-content">
+						<h2>Toddler Activities</h2>
+						<p>
+						Students engage in a variety of activities designed to foster creativity and critical thinking. From painting and drawing to building with blocks, preschoolers are encouraged to explore and express themselves through hands-on learning.
+						</p>
+						<p>
+						Teachers provide guidance while allowing children the freedom to discover new concepts at their own pace. These activities not only develop fine motor skills but also lay the foundation for academic success and social-emotional growth.
+						</p>
+					</div>
+				</div>
+
+				<div class="layout">
+					<div class="text-content">
+						<h2> Curriculum</h2>
+						<p>
+						Preschoolers use their newfound independence, language, and latent curiosity to play, build, and respond to their world. RRDC preschool classrooms challenge children with more complex materials as students work to recognize patterns, accomplish tasks, and care for their environment.
+						</p>
+						<p>
+						In the classroom, students can explore dramatic play, storytelling, visual arts, puzzles, math manipulatives, toys, and games at their own pace. Balanced with time for music, cultural education, outdoor play, nap, meals, and snacks, preschoolers practice a daily routine that builds confidence before kindergarten.
+						</p>
+					</div>
+					<div class="image-content">
+						<img src="../assets/images/toddler_3.jpg" alt="Curriculum Image">
 					</div>
 				</div>
 			</div>

@@ -12,57 +12,28 @@
 		
 		<div class="section">
 			<div class="container" style="max-width: 1160px">
-				<div class="section--header">
-					<h2 class="section--title">Late News</h2>
-					<p class="section--description">
-						
-					</p>
-				</div>
-				
-				<div class="news-contaier">
-					<div class="blog">
-						<div class="am-g">
-							<div class="am-u-lg-4 am-u-md-6 am-u-end" v-for="(article,index) in articles.records" :key="index">
-								<div class="article">
-									<div class="article-img">
-										<img :src="article.cover" alt="" />
-									</div>
-									<div class="article-header">
-										<h2><router-link :to="{name:'newsDetails',params:{newsId:article.articleId}}" rel="">{{article.title}}</router-link></h2>
-										<ul class="article--meta">
-											<li class="article--meta_item -date">{{article.createTime}}</li>
-										</ul>
-									</div>
-									<div class="article--content">
-										<p>{{article.introduction}}</p>
-									</div>
-									<div class="article--footer">
-										<router-link :to="{name:'newsDetails',params:{newsId:article.articleId}}" class="link">查看更多</router-link>
-									</div>
-								</div>
+				<div class="teacher-list-container">
+					<!-- 标题部分 -->
+					<div class="title-section">
+						<h1><span>Certified</span> Teachers</h1>
+						<p>Our team members are developmental specialist for the age they teach. All head teachers hold an A.M.I teaching credential.</p>
+					</div>
+
+					<!-- 教师卡片列表 -->
+					<div class="teacher-cards">
+						<div class="teacher-card" v-for="(teacher, index) in teachers" :key="index">
+							<img :src="teacher.photo" alt="teacher photo" class="teacher-photo" />
+							<h3>{{ teacher.name }}</h3>
+							<h4>{{ teacher.position }}</h4>
+							<p>{{ teacher.description }}</p>
+							<!-- 社交媒体图标 -->
+							<div v-if="teacher.socials" class="social-icons">
+								<a v-for="(icon, index) in teacher.socials" :key="index" :href="icon.link" target="_blank">
+									<i :class="icon.iconClass"></i>
+								</a>
 							</div>
 						</div>
-						
-						<ul class="am-pagination" style="text-align: center;">
-							<li :class="pageIndex === 1 ? 'am-disabled':''"
-								@click="changeIndex(pageIndex - 1)">
-								<a href="#">&laquo;</a>
-							</li>
-							
-							<li v-for="(p,index) in articles.pages"
-								:key="index"
-								@click="changeIndex(p)"
-								:class="pageIndex === p ? 'am-active':''">
-								<a href="#">{{p}}</a>
-							</li>
-							
-							<li :class="pageIndex === articles.pages ? 'am-disabled':''"
-								@click="changeIndex(pageIndex + 1)">
-								<a href="#">&raquo;</a>
-							</li>
-						</ul>
 					</div>
-				
 				</div>
 			</div>
 		</div>
@@ -79,6 +50,38 @@ export default {
 		return{
 			articles: {},
 			pageIndex: 1,
+			teachers: [
+				{
+				name: 'Bianca Wilson',
+				position: 'TEACHER',
+				photo: require('../assets/images/teacher-1.jpg'),
+				description: 'I am an ambitious workaholic, but apart from that, pretty simple'
+				},
+				{
+				name: 'Mitch Parker',
+				position: 'ENGLISH TEACHER',
+				photo: require('../assets/images/teacher-2.jpg'),
+				description: 'I am an ambitious workaholic, but apart from that, pretty simple',
+				socials: [
+					{ link: '#', iconClass: 'fab fa-twitter' },
+					{ link: '#', iconClass: 'fab fa-facebook' },
+					{ link: '#', iconClass: 'fab fa-google' },
+					{ link: '#', iconClass: 'fab fa-instagram' }
+				]
+				},
+				{
+				name: 'Stella Smith',
+				position: 'ART TEACHER',
+				photo: require('../assets/images/teacher-3.jpg'),
+				description: 'I am an ambitious workaholic, but apart from that, pretty simple'
+				},
+				{
+				name: 'Monshe Henderson',
+				position: 'SCIENCE TEACHER',
+				photo: require('../assets/images/teacher-4.jpg'),
+				description: 'I am an ambitious workaholic, but apart from that, pretty simple'
+				}
+			]
 		}
 	},
 	mounted() {

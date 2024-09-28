@@ -75,26 +75,34 @@
 			</div>
 		</div>
 		
-				<div class="title-section">
-					<h1>Why Choose Us</h1>
-				</div>
+		<div class="title-section">
+			<h1>Why Choose Us</h1>
+		</div>
 				
-				<div class="card-container">
-					<div class="card" v-for="(card, index) in cards" :key="index" :style="{ backgroundColor: card.color }">
-					<div class="icon-container">
-						<!-- 确保icon-background有白色背景 -->
-						<div class="icon-background">
-							<img :src="card.icon" alt="icon" class="icon" />
-						</div>
-					</div>
-					<h2>{{ card.title }}</h2>
-					<p>{{ card.desc }}</p>
+		<div class="card-container">
+			<div class="card" v-for="(card, index) in cards" :key="index" :style="{ backgroundColor: card.color }">
+				<div class="icon-container">
+					<!-- 确保icon-background有白色背景 -->
+					<div class="icon-background">
+						<img :src="card.icon" alt="icon" class="icon" />
 					</div>
 				</div>
+				<h2>{{ card.title }}</h2>
+				<p>{{ card.desc }}</p>
+			</div>
+		</div>
 
 		<div class="title-section">
       		<h1><span>Activities</span></h1>
       	</div>
+
+		<div class="image-gallery">
+			<div class="gallery-container">
+				<div class="gallery-item" v-for="(image, index) in activityList" :key="index">
+					<img :src="image.src" :alt="'Image ' + (index + 1)" />
+				</div>
+			</div>
+		</div>
 		<!-- <div class="section" style="border-bottom: 1px solid #e9e9e9; padding-top: 0">
 			<div class="container" style="max-width: 1160px;">
 				<div class="section--header">
@@ -106,28 +114,28 @@
 		</div> -->
 
 		<div class="teacher-list-container">
-    <!-- 标题部分 -->
-    <div class="title-section">
-      <h1><span>Certified</span> Teachers</h1>
-      <p>Our team members are developmental specialist for the age they teach. All head teachers hold an A.M.I teaching credential.</p>
-    </div>
+			<!-- 标题部分 -->
+			<div class="title-section">
+				<h1><span>Certified</span> Teachers</h1>
+				<p>Our team members are developmental specialist for the age they teach. All head teachers hold an A.M.I teaching credential.</p>
+			</div>
 
-    <!-- 教师卡片列表 -->
-    <div class="teacher-cards">
-      <div class="teacher-card" v-for="(teacher, index) in teachers" :key="index">
-        <img :src="teacher.photo" alt="teacher photo" class="teacher-photo" />
-        <h3>{{ teacher.name }}</h3>
-        <h4>{{ teacher.position }}</h4>
-        <p>{{ teacher.description }}</p>
-        <!-- 社交媒体图标 -->
-        <div v-if="teacher.socials" class="social-icons">
-          <a v-for="(icon, index) in teacher.socials" :key="index" :href="icon.link" target="_blank">
-            <i :class="icon.iconClass"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+			<!-- 教师卡片列表 -->
+			<div class="teacher-cards">
+				<div class="teacher-card" v-for="(teacher, index) in teachers" :key="index">
+					<img :src="teacher.photo" alt="teacher photo" class="teacher-photo" />
+					<h3>{{ teacher.name }}</h3>
+					<h4>{{ teacher.position }}</h4>
+					<p>{{ teacher.description }}</p>
+					<!-- 社交媒体图标 -->
+					<div v-if="teacher.socials" class="social-icons">
+						<a v-for="(icon, index) in teacher.socials" :key="index" :href="icon.link" target="_blank">
+							<i :class="icon.iconClass"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</Layout>
 </template>
 
@@ -149,43 +157,43 @@ export default {
 			tabIndex: 0,
 			slideshow:[],
 			teachers: [
-        {
-          name: 'Bianca Wilson',
-          position: 'TEACHER',
-          photo: require('../assets/images/teacher-1.jpg'),
-          description: 'I am an ambitious workaholic, but apart from that, pretty simple'
-        },
-        {
-          name: 'Mitch Parker',
-          position: 'ENGLISH TEACHER',
-          photo: require('../assets/images/teacher-2.jpg'),
-          description: 'I am an ambitious workaholic, but apart from that, pretty simple',
-          socials: [
-            { link: '#', iconClass: 'fab fa-twitter' },
-            { link: '#', iconClass: 'fab fa-facebook' },
-            { link: '#', iconClass: 'fab fa-google' },
-            { link: '#', iconClass: 'fab fa-instagram' }
-          ]
-        },
-        {
-          name: 'Stella Smith',
-          position: 'ART TEACHER',
-          photo: require('../assets/images/teacher-3.jpg'),
-          description: 'I am an ambitious workaholic, but apart from that, pretty simple'
-        },
-        {
-          name: 'Monshe Henderson',
-          position: 'SCIENCE TEACHER',
-          photo: require('../assets/images/teacher-4.jpg'),
-          description: 'I am an ambitious workaholic, but apart from that, pretty simple'
-        }
-      ],
+				{
+				name: 'Bianca Wilson',
+				position: 'TEACHER',
+				photo: require('../assets/images/teacher-1.jpg'),
+				description: 'I am an ambitious workaholic, but apart from that, pretty simple'
+				},
+				{
+				name: 'Mitch Parker',
+				position: 'ENGLISH TEACHER',
+				photo: require('../assets/images/teacher-2.jpg'),
+				description: 'I am an ambitious workaholic, but apart from that, pretty simple',
+				socials: [
+					{ link: '#', iconClass: 'fab fa-twitter' },
+					{ link: '#', iconClass: 'fab fa-facebook' },
+					{ link: '#', iconClass: 'fab fa-google' },
+					{ link: '#', iconClass: 'fab fa-instagram' }
+				]
+				},
+				{
+				name: 'Stella Smith',
+				position: 'ART TEACHER',
+				photo: require('../assets/images/teacher-3.jpg'),
+				description: 'I am an ambitious workaholic, but apart from that, pretty simple'
+				},
+				{
+				name: 'Monshe Henderson',
+				position: 'SCIENCE TEACHER',
+				photo: require('../assets/images/teacher-4.jpg'),
+				description: 'I am an ambitious workaholic, but apart from that, pretty simple'
+				}
+			],
 			
 			activityList:[
-				// {id:1,icon:'am-icon-diamond',title:'多页面工作',desc:'标签栏可切换，不必为了新内容而被迫跳转界面，多项工作内容并行处理'},
-				// {id:2,icon:'am-icon-user',title:'多页面工作',desc:'标签栏可切换，不必为了新内容而被迫跳转界面，多项工作内容并行处理'},
-				// {id:3,icon:'am-icon-umbrella',title:'多页面工作',desc:'标签栏可切换，不必为了新内容而被迫跳转界面，多项工作内容并行处理'},
-				// {id:4,icon:'am-icon-briefcase',title:'多页面工作',desc:'标签栏可切换，不必为了新内容而被迫跳转界面，多项工作内容并行处理'}
+				{ src: require('../assets/images/index/act-1.jpg') },
+				{ src: require('../assets/images/index/act-2.jpg') },
+				{ src: require('../assets/images/index/act-3.jpg') },
+				{ src: require('../assets/images/index/act-4.jpg') },
 			]
 		}
 	},
