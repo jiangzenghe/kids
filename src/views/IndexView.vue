@@ -190,7 +190,7 @@ export default {
 			],
 			
 			activityList:[
-				{ src: require('../assets/images/index/act-1.jpg') },
+				{ src: require('../assets/images/index/act-5.jpg') },
 				{ src: require('../assets/images/index/act-2.jpg') },
 				{ src: require('../assets/images/index/act-3.jpg') },
 				{ src: require('../assets/images/index/act-4.jpg') },

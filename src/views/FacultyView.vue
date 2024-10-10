@@ -12,7 +12,12 @@
 		
 		<div class="section">
 			<div class="container" style="max-width: 1160px">
+				<div >
+					<p>We pride ourselves in continuous innovation, research and advancement in early childhood, creating hallmark programs by combining Emergent curriculum, Music, and Cultural education. We offer excellent professional growth and development opportunities and encourage our teachers to constantly pursue education and challenge themselves to be the best that they can be.</p>
+				</div>
+				
 				<div class="teacher-list-container">
+					
 					<!-- 标题部分 -->
 					<div class="title-section">
 						<h1><span>Certified</span> Teachers</h1>

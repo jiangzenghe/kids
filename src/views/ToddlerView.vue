@@ -19,7 +19,7 @@
 					<div class="text-content">
 						<h2>Classroom</h2>
 						<p>
-						Preschoolers use their newfound independence, language, and latent curiosity to play, build, and respond to their world. RRDC preschool classrooms challenge children with more complex materials as students work to recognize patterns, accomplish tasks, and care for their environment.
+						
 						</p>
 						<p>
 						In the classroom, students can explore dramatic play, storytelling, visual arts, puzzles, math manipulatives, toys, and games at their own pace. Balanced with time for music, cultural education, outdoor play, nap, meals, and snacks, preschoolers practice a daily routine that builds confidence before kindergarten.
@@ -50,10 +50,10 @@
 					<div class="text-content">
 						<h2> Curriculum</h2>
 						<p>
-						Preschoolers use their newfound independence, language, and latent curiosity to play, build, and respond to their world. RRDC preschool classrooms challenge children with more complex materials as students work to recognize patterns, accomplish tasks, and care for their environment.
+						Toddlers use their newfound independence, language, and latent curiosity to play, build, and respond to their world. RRDC preschool classrooms challenge children with more complex materials as students work to recognize patterns, accomplish tasks, and care for their environment.
 						</p>
 						<p>
-						In the classroom, students can explore dramatic play, storytelling, visual arts, puzzles, math manipulatives, toys, and games at their own pace. Balanced with time for music, cultural education, outdoor play, nap, meals, and snacks, preschoolers practice a daily routine that builds confidence before kindergarten.
+						
 						</p>
 					</div>
 					<div class="image-content">

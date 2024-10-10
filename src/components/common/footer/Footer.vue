@@ -29,7 +29,7 @@
 						<strong class="footer_main--column_title">Contact</strong>
 						<ul class="footer_contact_info">
 							<li class="footer_contact_info--item"><i class="am-icon-phone"></i><span>347 9328 3284</span></li>
-							<li class="footer_contact_info--item"><i class="am-icon-map-marker"></i><span>9140 Bridgeport Rd Richmond, BC. V6X 1S1</span></li>
+							<li class="footer_contact_info--item"><i class="am-icon-map-marker"></i><span>Richmond</span></li>
 							<li class="footer_contact_info--item"><i class="am-icon-clock-o"></i><span>info@permiermontessori.ca </span></li>
 						</ul>
 					</div>
